@@ -1,0 +1,36 @@
+@charset "UTF-8"
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+body {
+    background-color: whitesmoke;
+    color: rgba(0,0,0,1)
+}
+
+/* Formatação de imagens com legendas */
+figure.foto-legenda {
+    position: relative;  /* "foto legenda" irá ocupar um espaço relativo ao local em que está no arquivo HTML (meio que no meio) por estar assinalada como relative */
+    border: 8px solid whitesmoke;
+    box-shadow: 1px 1px 4px black;
+}
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+}
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute; /* "figcaption" irá ocupar o mesmo local de "foto-legenda" por estar aqui assinalado como absolute*/
+    top: 0px;
+    background-color: rgba(0,0,0,0.4);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: 1s;
+}
+figure.foto-legenda :hover{
+    opacity: 1;
+}

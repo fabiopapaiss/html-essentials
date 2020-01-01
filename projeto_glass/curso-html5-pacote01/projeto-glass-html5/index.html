@@ -4,15 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <title>Tudo sobre o Google Glass</title>
-    <style>
-        p {
-            text-align: justify;
-            text-indent: 50px;
-        }
-        body {
-            background-color: whitesmoke;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+    <!-- Dessa forma nós "importamos" a nossa folha de estilos que está em outro arquivo -->
 </head>
 
 <body>
@@ -25,13 +18,18 @@
 
             <img
                 src="C:\Users\Fábio\Documents\Curso HTML\projeto_glass\curso-html5-pacote01\projeto-glass-html5\_imagens\glass-oculos-preto-peq.png" />
-
-            Menu Principal
-            - Home
-            - Especificações
-            - Fotos
-            - Multimídia
-            - Fale conosco
+            <nav>
+                <!-- Criar "menus"-->
+                <h1>Menu Principal</h1>
+                <ul>
+                    <!-- Unordered List, temos também a "Ordered List" (<ol>) -->
+                    <li><a href = "index.html" type = "_self">Home</a></li> <!-- List Item -->
+                    <li><a href = "specs.html" type = "_self">Especificações</a></li> <!-- Colocamos o "_self" para ter certeza que esetes links do menus de navegação irão para a mesma página e não para outra aba-->
+                    <li><a href = "fotos.html" type = "_self">Fotos</a></li>
+                    <li><a href = "multimidia.html" type = "_self">Multimídia</a></li>
+                    <li><a href = "fale-conosco.html" type = "_self">Fale conosco</a></li>
+                </ul>
+            </nav>
 
         </header>
         <hgroup>
@@ -51,7 +49,7 @@
     <p><b>Inúmeros mais!</b></p>
 
 </p> -->
-<!-- 
+        <!-- 
 <p>
     Exemplos de formatação<br/>
 
@@ -69,9 +67,10 @@
 -->
 
         <h2>O que é</h2>
-        <p style="text-align: justify; text-indent: 50px;">O <span style="text-decoration: underline;"><b>Google 
+        <p style="text-align: justify; text-indent: 50px;">O <span style="text-decoration: underline;"><b>Google
                     Glass</b></span> é um acessório em forma de óculos que possibilita a interação dos usuários com
-            diversos conteúdos em realidade aumentada. Também chamado de <i>Project Glass</i>, o eletrônico é capaz de 
+            diversos conteúdos em realidade aumentada. Também chamado de <a href="http://glass.google.com" target = "_blank"><i>Project
+                    Glass</i></a> <!-- Elemento âncora <a> para criar links -->, o eletrônico é capaz de
             tirar fotos a partir de comandos de voz, enviar mensagens instantâneas e realizar
             víde&shy;oconf&shy;erências. Seu lançamento está previsto para 2014, e seu preço deve ser de US$ 1,5 mil.
             Atualmente o Google Glass encontra-se em fase de testes e já possui um vídeo totalmente gravado com o
@@ -79,7 +78,13 @@
             para o acessório.</p>
         <!--o "&shy" é tipo um "<wbr/>" (quebra de palavras) porém com hifenização-->
 
-        [AQUI ENTRA UMA FOTO]
+        <figure class="foto-legenda">
+            <img src="_imagens/glass-quadro-homem-mulher.jpg">
+            <figcaption>
+                <h3>Google Glass</h3>
+                <p id="legenda">Uma nova maneira de ver o mundo!</p>
+            </figcaption>
+        </figure>
 
         <h1>Data de lançamento</h1>
         <p>Não há uma data específica e oficial para o dispositivo ser lançado, ainda. Pode ser que ele esteja
